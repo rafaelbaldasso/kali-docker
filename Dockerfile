@@ -3,7 +3,7 @@ FROM kalilinux/kali-last-release
 WORKDIR /root
 
 RUN apt update
-RUN apt install git netexec nmap ssh python3-pip python3-venv python2.7 ruby metasploit-framework dirb sslscan dnsutils sendemail postfix golang subfinder nano -y
+RUN apt install systemctl net-tools iproute2 git netexec nmap ssh python3-pip python3-venv python2.7 ruby metasploit-framework dirb sslscan dnsutils sendemail postfix golang subfinder nano -y
 RUN timedatectl set-timezone America/Sao_Paulo
 RUN wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
 RUN python2.7 get-pip.py
