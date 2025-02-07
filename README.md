@@ -1,5 +1,6 @@
 # Building
-`wget https://raw.githubusercontent.com/rafaelbaldasso/kali-docker/refs/heads/main/Dockerfile`  
+`git clone httos://github.com/rafaelbaldasso/kali-docker`  
+`cd kali-docker`  
 `docker build -t kali .`  
 
 # Tools
@@ -12,7 +13,6 @@
 - python2.7, pip2
 - ruby
 - metasploit-framework, postgresql
-- dirb
 - sslscan
 - dnsutils
 - sendemail
@@ -21,3 +21,9 @@
 - subfinder
 - nano
 - httpx
+- seclists
+- hydra
+- ffuf
+- gobuster
+- dirb
+- searchsploit
