@@ -3,7 +3,7 @@ FROM kalilinux/kali-last-release
 WORKDIR /root
 
 RUN apt update
-RUN apt install locate seclists hydra net-tools iproute2 git netexec nmap ssh python3-pip python3-venv python2.7 ruby metasploit-framework dirb sslscan dnsutils sendemail postfix golang subfinder nano exploitdb gobuster ffuf -y
+RUN apt install locate seclists hydra net-tools iproute2 git netexec nmap ssh python3-pip python3-venv python2.7 ruby metasploit-framework dirb sslscan dnsutils sendemail postfix golang subfinder nano exploitdb gobuster ffuf iputils-ping hping3 -y
 RUN wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
 RUN python2.7 get-pip.py
 RUN rm -rf get-pip.py
@@ -17,3 +17,5 @@ RUN cd /root/httpx/cmd/httpx;go build;mv httpx /usr/local/bin/;cd /root
 COPY services.sh /tmp/services.sh
 RUN chmod +x /tmp/services.sh
 ENTRYPOINT ["/tmp/services.sh"]
+
+CMD ["/bin/bash"]
