@@ -1,3 +1,7 @@
+# Building
+`wget https://raw.githubusercontent.com/rafaelbaldasso/kali-docker/refs/heads/main/Dockerfile`  
+`docker build -t kali .`  
+
 # Tools
 - git
 - netexec
