@@ -14,8 +14,6 @@
 - ruby
 - metasploit-framework, postgresql
 - sslscan
-- dnsutils
-- sendemail
 - postfix
 - golang
 - subfinder
@@ -27,3 +25,4 @@
 - gobuster
 - dirb
 - searchsploit
+- hping3
