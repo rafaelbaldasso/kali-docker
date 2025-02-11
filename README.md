@@ -29,3 +29,7 @@
 - dirb
 - searchsploit
 - hping3
+
+# Info
+- Every container runs initially a script to make metasploit and its database work properly
+- python3-venv at /root has the pip3 modules installed (`source python3-venv/bin/activate`)
