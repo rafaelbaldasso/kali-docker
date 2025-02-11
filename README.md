@@ -3,6 +3,9 @@
 `cd kali-docker`  
 `docker build -t kali .`  
 
+# Running
+`docker run -it --rm kali`  
+
 # Tools
 - git
 - netexec
