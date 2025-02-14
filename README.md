@@ -30,6 +30,8 @@
 - searchsploit
 - hping3
 
+  > To-do: tmux, ngrok
+
 # Info
 - Every container initially runs a script to make metasploit and its database work properly
 - python3-venv at /root has the pip3 base modules installed (`source python3-venv/bin/activate`)
