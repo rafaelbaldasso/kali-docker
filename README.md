@@ -22,6 +22,7 @@
 - subfinder
 - nano
 - httpx
+- nuclei
 - wpscan
 - seclists
 - hydra
