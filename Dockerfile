@@ -3,7 +3,11 @@ FROM kalilinux/kali-last-release
 WORKDIR /root
 
 RUN apt update
-RUN apt install locate seclists hydra net-tools iproute2 git netexec nmap ssh python3-pip python3-venv python2.7 ruby metasploit-framework dirb sslscan dnsutils sendemail postfix golang subfinder nano exploitdb gobuster ffuf iputils-ping hping3 -y
+RUN apt install locate seclists hydra net-tools iproute2 git netexec nmap ssh python3-pip python3-venv python2.7 ruby metasploit-framework dirb sslscan \
+  dnsutils sendemail postfix golang subfinder nano exploitdb gobuster ffuf iputils-ping hping3 tmux wpscan nuclei -y
+RUN curl -sSL https://ngrok-agent.s3.amazonaws.com/ngrok.asc | sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null \
+  && echo "deb https://ngrok-agent.s3.amazonaws.com buster main" | sudo tee /etc/apt/sources.list.d/ngrok.list \
+  && sudo apt update && sudo apt install ngrok
 RUN wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
 RUN python2.7 get-pip.py
 RUN rm -rf get-pip.py
