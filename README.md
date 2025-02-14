@@ -22,6 +22,7 @@
 - subfinder
 - nano
 - httpx
+- wpscan
 - seclists
 - hydra
 - ffuf
@@ -29,8 +30,8 @@
 - dirb
 - searchsploit
 - hping3
-
-  > To-do: tmux, ngrok
+- tmux
+- ngrok (`ngrok config add-authtoken <TOKEN>`)
 
 # Info
 - Every container initially runs a script to make metasploit and its database work properly
