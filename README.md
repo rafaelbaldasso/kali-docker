@@ -1,5 +1,5 @@
 # Building
-`git clone httos://github.com/rafaelbaldasso/kali-docker`  
+`git clone https://github.com/rafaelbaldasso/kali-docker`  
 `cd kali-docker`  
 `docker build -t kali .`  
 
